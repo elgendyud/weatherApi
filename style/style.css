@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding:0;
+    font-size: large;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.app{
+    width: fit-content;
+    padding: 50px;
+    border-radius: 14px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(240, 255, 255, 0.527);
+}
+ .popular-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ .popular-card .card{
+    max-height: 300px;
+    position: relative;
+}
+ .popular-card .card .details{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    text-wrap: nowrap;
+    color: black;
+    background-color: rgba(0, 255, 255, 0.511);
+    padding: 15px;
+    border-radius: 14px;
+}
+ .popular-card .card img{
+    width: 350px;
+    height: 250px;
+}
+ .popular-card .card .details button{
+    padding : 8px 10px;
+    outline: none;
+    border: none;
+    border-radius: 14px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+    position: relative;
+    top: 0;
+    left: 0;;
+    animation-name: top;
+    animation-duration: 2s;
+}
+.card .details button:hover{
+    letter-spacing: 2px;
+}
+.card .details button:active{
+    transform: scale(0.9);
+}
+.result{
+    text-align: start;
+}
+.search {
+    text-align: center;
+    /* margin-top: 50px; */
+    position: relative;
+    width: 250px;
+    margin: 20px auto;
+}
+.search input{
+    /* width: 400px; */
+    height: 20px;
+    padding: 10px 30px 10px 10px;
+    background-color: rgba(0, 255, 255, 0.511);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.search button{
+    padding: 10px 18px;
+    background-color: aliceblue;
+    cursor: pointer;
+    border:1px solid navajowhite;
+    transition: 0.5s;
+
+}
+.search button:hover{
+    border: 1px solid black;
+}

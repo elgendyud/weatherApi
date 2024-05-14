@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather API</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="app">
+  <h1 style="text-align: center; font-size: 40px;">Weather API</h1>
+
+  <div class="search">
+    <input type="text" value placeholder="Insert City Name" />
+    <button id="check">Check Now</button>
+  </div>
+  <div class="result">
+    <div>City : <span class="city"></span> </div>
+    <div>Temp : <span class="temp"></span></div>
+  </div>
+</div>
+
+
+<h2 style="text-align: center; margin-bottom: 20px; font-size: 30px;">Popular Cities</h2>
+      <div class="popular-card">
+        <div class="card">
+          <img src="images/cairo.jfif" alt="Cairo Picture" />
+          <div class="details">
+              <button onclick="cairo()">Cairo</button>
+            </div>
+        </div>
+        <div class="card">
+          <img src="images/alexandria.jfif" alt="Alexandria Picture" />
+          <div class="details">
+              <!-- <h3>Alexandria</h3> -->
+              <button onclick="alexandria()">Alexandria</button>
+            </div>
+        </div>
+        <div class="card">
+          <img src="images/luxor.jfif" alt="Luxor Picture" />
+          <div class="details">
+              <!-- <h3>Luxor</h3> -->
+              <button onclick="luxor()">Luxor</button>
+            </div>
+        </div>
+        <div class="card">
+          <img src="images/aswan.jfif" alt="Aswan Picture" />
+          <div class="details">
+              <!-- <h3>Aswan</h3> -->
+              <button onclick="aswan()">Aswan</button>
+            </div>
+        </div>
+      </div>
+
+
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
