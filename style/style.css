@@ -101,3 +101,8 @@ body{
 .search button:hover{
     border: 1px solid black;
 }
+@media(max-width: 767px){
+.popular-card {
+ flex-direction : column;
+}
+}
